@@ -1,0 +1,1 @@
+../mobile/src/declarations.d.ts
