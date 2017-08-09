@@ -15,8 +15,8 @@
 
   <ion-toolbar no-border-top *ngIf="searching">
     <ion-searchbar color="primary"
-                   [(ngModel)]="queryText"
-                   (ionInput)="updateSchedule()"
+                   [(ngModel)]="searchText"
+                   (ionInput)="search()"
                    placeholder="Search">
     </ion-searchbar>
   </ion-toolbar>

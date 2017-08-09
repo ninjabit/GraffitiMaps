@@ -30,6 +30,8 @@ export class MapPage implements OnInit, OnDestroy {
   intervalObs: Subscription;
 
   searching: boolean = false;
+  searchText = "";
+
   locating: boolean = false;
   location: Location = {};
 
@@ -81,6 +83,10 @@ export class MapPage implements OnInit, OnDestroy {
 
   toggleSearch() {
     this.searching = !this.searching;
+  }
+
+  search() {
+    console.log(this.searchText);
   }
 
   openCamera() {
