@@ -9,6 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "meteor-client:bundle": "meteor-client bundle -s ../api --config bundler.config.json",
+    "playground": "angular-playground",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -32,12 +33,13 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.4",
+    "@angular/cli": "^1.2.7",
     "@angular/compiler-cli": "^4.1.3",
     "@types/googlemaps": "^3.26.13",
     "@types/jasmine": "2.5.38",
     "@types/meteor": "^1.4.1",
     "@types/node": "~6.0.60",
+    "angular-playground": "^1.7.0",
     "angular2-meteor-polyfills": "^0.2.0",
     "codelyzer": "~2.0.0",
     "jasmine-core": "~2.5.2",
