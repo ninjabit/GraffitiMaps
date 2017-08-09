@@ -1,0 +1,70 @@
+<div class="signup-page">
+  <div class="header header-filter"
+       style="background-image: url('assets/img/city.jpg'); background-size: cover; background-position: top center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+          <div class="card card-signup">
+            <form class="form">
+              <div class="header header-primary text-center">
+                <h4>Sign Up</h4>
+                <div class="social-line">
+                  <a (click)="signupFacebook()" class="btn btn-simple btn-just-icon">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                  <a (click)="signupTwitter()" class="btn btn-simple btn-just-icon">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a (click)="signupGoogle()" class="btn btn-simple btn-just-icon">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <p class="text-divider">Or Be Classical</p>
+              <div class="content">
+
+                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">email</i>
+										</span>
+                  <input type="text" name="username" class="form-control" placeholder="Username" [(ngModel)]="credentials.username">
+                </div>
+                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">email</i>
+										</span>
+                  <input type="email" name="email" class="form-control" placeholder="Email" [(ngModel)]="credentials.email">
+                </div>
+
+                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+                  <input type="password" name="password" placeholder="Password..." class="form-control" [(ngModel)]="credentials.password"/>
+                </div>
+                <!-- If you want to add a checkbox to this form, uncomment this code
+
+                                  <div class="checkbox">
+                                      <label>
+                                          <input type="checkbox" name="optionsCheckboxes" checked>
+                                          Subscribe to newsletter
+                                      </label>
+                                  </div> -->
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary" (click)="signup()">Sign Up</button>
+              </div>
+
+              <p class="text-divider">Already signed up?</p>
+              <div class="footer text-center">
+                <a
+                  routerLink="/signin"
+                  class="btn btn-simple btn-primary btn-lg">Sign in</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

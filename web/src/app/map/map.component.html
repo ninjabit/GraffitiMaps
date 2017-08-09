@@ -1,0 +1,11 @@
+<div class="map-page">
+  <div class="header header-filter" style="background-image: url('../assets/img/examples/city.jpg');"></div>
+  <div class="main main-raised">
+    <app-add-button></app-add-button>
+    <div class="map-content">
+      <agm-map [latitude]="lat" [longitude]="lng">
+        <marker-cluster [points]="points" ></marker-cluster>
+      </agm-map>
+    </div>
+  </div>
+</div>

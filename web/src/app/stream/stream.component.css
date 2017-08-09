@@ -1,0 +1,12 @@
+.stream-page .header {
+  height: 380px;
+  background-position: top center;
+}
+.brick img {
+  width: 100%;
+  height: auto;
+}
+.brick {
+  width: 33%;
+  height: 300px;
+}

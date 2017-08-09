@@ -1,0 +1,15 @@
+.map-page .header {
+  height: 150px;
+  background-position: top center;
+}
+.map-page .main-raised {
+  overflow: hidden;
+}
+agm-map {
+  height: calc(100vh - 150px - 81px + 60px);
+}
+
+agm-marker {
+  height: 50px;
+  width: 50px;
+}

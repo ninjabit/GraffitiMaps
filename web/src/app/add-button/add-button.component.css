@@ -1,0 +1,10 @@
+button.btn-fab {
+  position: absolute;
+  z-index: 999;
+}
+.btn-fab.btn-fab-bottom {
+  bottom: 10px
+}
+.btn-fab.btn-fab-left {
+  left: 10px;
+}
