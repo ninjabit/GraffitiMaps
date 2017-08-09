@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Map</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toggleSearch()">
+        <ion-icon ios="ios-search-outline" md="md-search"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+  <ion-toolbar no-border-top *ngIf="searching">
+    <ion-searchbar color="primary"
+                   [(ngModel)]="queryText"
+                   (ionInput)="updateSchedule()"
+                   placeholder="Search">
+    </ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="map-page">
+  <ion-fab top center edge>
+    <button ion-fab color="vibrant" mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab (click)="openCamera()"><ion-icon name="camera"></ion-icon></button>
+      <button ion-fab (click)="openRoll()"><ion-icon name="photos"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-fab bottom left>
+    <button ion-fab (click)="locateMe()" [ngClass]="{'fab-md-vibrant': locating === true, 'fab-md-dark': locating === false}" ><ion-icon name="locate"></ion-icon></button>
+  </ion-fab>
+  <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [scrollwheel]="false" (boundsChange)="panMap()">
+    <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+  </sebm-google-map>
+</ion-content>

@@ -1,0 +1,29 @@
+<!--
+  Generated template for the UploadPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Upload</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-fab center top edge>
+    <button ion-fab color="vibrant" mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+  <div class="picture">
+    <img *ngIf="firstImage" [src]="firstImage">
+  </div>
+
+  <button ion-button color="secondary" (click)="save()">Save</button>
+
+  <button ion-button color="danger" (click)="cancel()">Cancel</button>
+
+
+</ion-content>

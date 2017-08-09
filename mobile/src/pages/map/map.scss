@@ -1,0 +1,16 @@
+page-map ion-content {
+  background: rgb(229, 227, 223);
+}
+
+page-map {
+
+  sebm-google-map {
+    padding: 0;
+  }
+
+  .sebm-google-map-container {
+    height: 100%;
+    margin-top: -15px;
+  }
+
+}

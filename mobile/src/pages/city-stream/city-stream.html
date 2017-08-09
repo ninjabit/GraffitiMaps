@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{city.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+
+    <div style="height: 500px; width: 100%" #mapCanvas id="map_canvas"></div>
+
+    <ion-row no-padding>
+      <ion-col>
+        <ion-item clear small color="grey" icon-left>
+          <ion-icon name='aperture'></ion-icon>
+          Photos
+          <div>
+            {{city.artsNumber}}
+          </div>
+        </ion-item>
+      </ion-col>
+      <ion-col text-center>
+        <ion-item clear small color="grey" icon-left>
+          <ion-icon name='compass'></ion-icon>
+          Spots
+          <div>
+            {{city.spotsNumber}}
+          </div>
+        </ion-item>
+      </ion-col>
+      <ion-col text-right>
+        <ion-item clear small color="grey" icon-left>
+          <ion-icon name='brush'></ion-icon>
+          Artits
+          <div>
+            {{city.artistsNumber}}
+          </div>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-segment [(ngModel)]="section">
+    <ion-segment-button value="arts">
+      Arts
+    </ion-segment-button>
+    <ion-segment-button value="events">
+      Events
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="section">
+    <ion-list *ngSwitchCase="'arts'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-puppy-1.jpg">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'events'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

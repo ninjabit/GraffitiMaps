@@ -1,0 +1,63 @@
+<!--
+  Generated template for the CityListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Explore</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toggleSearch()">
+        <ion-icon ios="ios-search-outline" md="md-search"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+  <ion-toolbar no-border-top *ngIf="searching">
+    <ion-searchbar color="primary"
+                   [(ngModel)]="queryText"
+                   (ionInput)="updateSchedule()"
+                   placeholder="Search">
+    </ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list #cityList [hidden]="cities.length == 0" no-lines no-padding no-margin>
+
+      <ion-card *ngFor="let city of cities" (click)="goToCityStream(city)">
+        <div class="overlay">
+            <img [src]="city.picture">
+        </div>
+        <div class="card-title">
+            {{city.name}}
+        </div>
+        <div class="card-subtitle">
+          <p>{{city.artsNumber}} photos</p>
+          <p>{{city.spotsNumber}} spots</p>
+        </div>
+      </ion-card>
+
+  </ion-list>
+
+  <ion-list-header [hidden]="cities.length > 0">
+    No cities yet. Add one now
+  </ion-list-header>
+
+
+</ion-content>

@@ -1,0 +1,6 @@
+{
+  "runtime": {
+    "ROOT_URL": "http://127.0.0.1:3000",
+    "DDP_DEFAULT_CONNECTION_URL": "http://localhost:3000"
+  }
+}
