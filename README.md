@@ -1,7 +1,20 @@
-# StreetartLovers
+# GraffitiMaps
 
 ## Intro
-SL is a free and opensource multiplatform project intended to 
+GraffitiMaps is a free and opensource multiplatform project intended to provide a wiki like environment where to track all the Graffitis in the world.
+
+It's free and opensource, respecting the real Streetart ecosystem.
+
+It allows anonymous accounts, to let the artists (or everyone else) share their creations.
+
+It allows any type of content, until it's pertinent to the Streetart's world.
+
+Inappropriate content will be removed from the community itself, once it's active. Until then some volunteer staff will lend its hand for this task.
+
+Arts attribution to artists is done through a percentile system, which enforce the democratic approach of the entire platform.
+
+Artists and other users share the same privileges and functionalities.
+Any user will need to gain respect-points (kudos) within the platform to be able to perform specific actions, like moderating and editing.
 
 ### First batch of features
 - display on map with clusters and infowindows

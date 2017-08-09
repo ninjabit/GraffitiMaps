@@ -1,6 +1,6 @@
 # StreetartLovers dev
 
-## Project creation
+## Local setup
 
 ### 1. Web
 ```
