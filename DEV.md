@@ -2,27 +2,60 @@
 
 ## Local setup
 
-### 1. Web
-```
-ng new web
-```
-
-### 2. Mobile
-```
-ionic start mobile
+Clone the repo
 
 ```
+git clone [git@github.com:ninjabit/GraffitiMaps.git]
+```
 
-Install mobile libs
+Install the necessary runtimes and environments
+- node
+- meteor
+- ionic
+
+Install the dependencies
+```
+npm install
+```
+
+Compile (and link) the core module
+
+```
+yarn build
+```
+
+Compile the api for each client
+
 ```
 cd mobile
-npm install --save-dev typescript-extends
-npm install --save-dev @types/underscore
-npm install --save-dev meteor-typings
-npm install --save moment
-npm install --save angular2-moment
+npm run meteor-client:bundle
 ```
 
+```
+cd web
+npm run meteor-client:bundle
+```
+
+Run the server
+
+```
+cd api
+meteor
+```
+
+Run the web client
+
+```
+cd web
+ng serve
+```
+
+Run the mobile client
+
+```
+cd mobile
+ionic serve
+```
 
 Install the bundler to include the api as part of the mobile client
 ```
