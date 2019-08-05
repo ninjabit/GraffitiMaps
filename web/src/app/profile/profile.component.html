@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row">
           <div class="profile">
-            <div class="avatar">
+            <div class="avatar" (click)="changeProfileImage()">
               <img *ngIf="profile.picture" [src]="profile.picture" alt="Circle Image" class="img-circle img-responsive img-raised">
               <img *ngIf="!profile.picture" src="assets/img/avatar.jpg" alt="Circle Image" class="img-circle img-responsive img-raised">
             </div>

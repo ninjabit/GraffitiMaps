@@ -1,5 +1,6 @@
 import {Component, NgZone, OnInit} from '@angular/core';
-import {AuthService} from "streetartlovers-core";
+import {AuthService} from 'streetartlovers-core';
+import {User} from 'api/models/user';
 
 @Component({
   selector: 'app-top-bar',
@@ -10,6 +11,7 @@ export class TopBarComponent implements OnInit {
   autorunComputation: Tracker.Computation;
   currentUser: Meteor.User;
   currentUserId: string;
+  // currentUser: User;
   isLoggingIn: boolean;
   isLoggedIn: boolean;
 

@@ -38,15 +38,6 @@ export class SignInComponent implements OnInit {
       .catch((error) => {
         this.errors.push(error.reason || "Unknown error");
       });
-
-    // Meteor.loginWithPassword(email, password, (error) => {
-    //   if (error) {
-    //     this.errors.push(error.reason || "Unknown error");
-    //   }
-    //   else {
-    //     this.resetCredentialsFields();
-    //   }
-    // });
   }
 
   private resetErrors() {

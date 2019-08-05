@@ -11,7 +11,7 @@
       <a class="navbar-brand" routerLink="/">Graffiti Maps</a>
     </div>
     <div class="collapse navbar-collapse" id="navigation-example">
-      <ul class="nav navbar-nav navbar-right" *ngIf="isLoggedIn">
+      <ul class="nav navbar-nav navbar-right">
         <li>
           <a routerLink="/map"
              routerLinkActive="active">
@@ -24,7 +24,7 @@
             Stream
           </a>
         </li>
-        <li>
+        <li *ngIf="isLoggedIn">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             {{ displayName() }}
             <b class="caret"></b>

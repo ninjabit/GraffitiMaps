@@ -17,7 +17,6 @@ import {AgmCoreModule} from '@agm/core';
 import {MasonryModule} from 'angular2-masonry';
 import {ArtsModule} from "./arts/arts.module";
 import {SearchBarComponent} from './search-bar/search-bar.component';
-import { TabPillsComponent } from './tab-pills/tab-pills.component';
 
 const appRoutes = [];
 
@@ -27,7 +26,6 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(appRoutes, {useHas
   declarations: [
     AppComponent,
     SearchBarComponent,
-    TabPillsComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +46,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(appRoutes, {useHas
     MasonryModule
   ],
   providers: [AuthService],
+  // providers: [AuthService, UserService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

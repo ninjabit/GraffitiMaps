@@ -16,10 +16,16 @@ export class ProfileComponent implements OnInit {
     this.loadProfile();
   }
 
+  changeProfileImage() {
+
+  }
+
   private loadProfile() {
+    let user = Meteor.user();
+    console.log(user);
     this.profile = Meteor.user().profile || {
-        username: '',
+        name: '',
         picture: null
-      };
+    };
   }
 }

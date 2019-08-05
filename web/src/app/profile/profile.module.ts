@@ -6,7 +6,7 @@ import {RouterModule} from "@angular/router";
 const profileRouting: ModuleWithProviders = RouterModule.forChild([
   {
     path: 'profile',
-    component: ProfileComponent
+    component: ProfileComponent,
   }
 ]);
 
