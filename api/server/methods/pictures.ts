@@ -1,7 +1,8 @@
-import {Art} from "../models/art";
+import {Picture} from "../models/picture";
+
 Meteor.methods({
-    addMedia(art: Art) {
-        console.log(art);
-        return art;
+    addPicture(picture: Picture) {
+        console.log(picture);
+        return picture;
     }
 });

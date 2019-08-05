@@ -13,7 +13,8 @@
     "paths": {
       "@angular/common": ["node_modules/@angular/common"],
       "@angular/compiler": ["node_modules/@angular/compiler"],
-      "@angular/core": ["node_modules/@angular/core"]
+      "@angular/core": ["node_modules/@angular/core"],
+      "api/*": ["../api/server/*"]
     },
     "outDir": "./dist",
     "sourceMap": true,
