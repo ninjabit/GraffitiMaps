@@ -1,4 +1,4 @@
-# StreetartLovers dev
+# GraffitiMaps development manual
 
 ## Local setup
 

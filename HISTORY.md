@@ -7,6 +7,12 @@
 ng new web
 ```
 
+Install web libs
+```
+cd web
+
+```
+
 ### 2. Mobile
 ```
 ionic start mobile

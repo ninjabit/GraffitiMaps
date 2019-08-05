@@ -1,4 +1,10 @@
-# Streetartlovers
+# Streetartlovers web frontend
+
+## Getting started
+
+See the DEV.md in the project root to start building and running the entire project.
+
+## Angular howto
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
 
